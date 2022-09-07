@@ -1,0 +1,5 @@
+F:\CS30\nickname-generator\obj\Debug\net6.0\nickname-generator.csproj.AssemblyReference.cache
+F:\CS30\nickname-generator\obj\Debug\net6.0\nickname-generator.GeneratedMSBuildEditorConfig.editorconfig
+F:\CS30\nickname-generator\obj\Debug\net6.0\nickname-generator.AssemblyInfoInputs.cache
+F:\CS30\nickname-generator\obj\Debug\net6.0\nickname-generator.AssemblyInfo.cs
+F:\CS30\nickname-generator\obj\Debug\net6.0\nickname-generator.csproj.CoreCompileInputs.cache
