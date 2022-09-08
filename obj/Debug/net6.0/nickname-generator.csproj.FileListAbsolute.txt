@@ -3,3 +3,13 @@ F:\CS30\nickname-generator\obj\Debug\net6.0\nickname-generator.GeneratedMSBuildE
 F:\CS30\nickname-generator\obj\Debug\net6.0\nickname-generator.AssemblyInfoInputs.cache
 F:\CS30\nickname-generator\obj\Debug\net6.0\nickname-generator.AssemblyInfo.cs
 F:\CS30\nickname-generator\obj\Debug\net6.0\nickname-generator.csproj.CoreCompileInputs.cache
+F:\CS30\nickname-generator\bin\Debug\net6.0\nickname-generator.exe
+F:\CS30\nickname-generator\bin\Debug\net6.0\nickname-generator.deps.json
+F:\CS30\nickname-generator\bin\Debug\net6.0\nickname-generator.runtimeconfig.json
+F:\CS30\nickname-generator\bin\Debug\net6.0\nickname-generator.dll
+F:\CS30\nickname-generator\bin\Debug\net6.0\nickname-generator.pdb
+F:\CS30\nickname-generator\obj\Debug\net6.0\nickname-generator.dll
+F:\CS30\nickname-generator\obj\Debug\net6.0\refint\nickname-generator.dll
+F:\CS30\nickname-generator\obj\Debug\net6.0\nickname-generator.pdb
+F:\CS30\nickname-generator\obj\Debug\net6.0\nickname-generator.genruntimeconfig.cache
+F:\CS30\nickname-generator\obj\Debug\net6.0\ref\nickname-generator.dll

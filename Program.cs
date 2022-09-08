@@ -3,13 +3,13 @@
 
 // init
 Console.WriteLine("Please enter your name");
+Console.WriteLine("----------------------");
 Console.Write("Please enter first name: "); string firstName = Console.ReadLine();
 Console.Write("Please enter last name: "); string lastName = Console.ReadLine();
 Console.WriteLine($"Current Name is {firstName} {lastName}");
 
 // init
-nickname = new List<string>() 
-{
+List<string> nickname = new List<string>() {
     "Crusher" ,
     "the Scientist", 
     "Twinkle-toes" , 
@@ -24,7 +24,7 @@ Random rnd = new Random();
 bool loop = true;
 while (loop){
     Console.Clear();
-    Console.WriteLine("MAIN MENU (John Doe)");
+    Console.WriteLine($"MAIN MENU ({firstName} {lastName})");
     Console.WriteLine("    1. Change Name");
     Console.WriteLine("    2. Display a Random Nickname");
     Console.WriteLine("    3. Display All Nicknames");
@@ -42,49 +42,49 @@ while (loop){
     if(mainMenuChoice == 2){
         Console.Clear();
         Console.WriteLine("RANDOM NICKNAME");
-        Console.WriteLine($"{firstName} {nickname[rnd.Next(0, nickname.Count())]} {lastName}");
+        Console.WriteLine($"{firstName} '{nickname[rnd.Next(0, nickname.Count())]}' {lastName}");
     }
-    // if(mainMenuChoice == 3){
-    //     Console.Clear();
-    //     Console.WriteLine("STATS");
-    //     int largestNum = 0;
-    //     int smallestNum = 100;
-    //     int averageNum = 0;
-
-    //     for (int i = 0; i < grades.Length; i++) {
-    //         if(grades[i] > largestNum){
-    //             largestNum = grades[i];
-    //         }
-    //         if(grades[i] < smallestNum){
-    //             smallestNum = grades[i];
-    //         }
-    //         averageNum += grades[i];
-    //     }
-    //     Console.WriteLine($"Highest Grade: {largestNum}");
-    //     Console.WriteLine($"Lowest Grade: {smallestNum}");
-    //     Console.WriteLine($"Average Grade: {averageNum/grades.Length}");
-    //     Console.WriteLine("");
-    // }
-    // if(mainMenuChoice == 4){
-    //     Console.Clear();
-    //     Console.WriteLine("# of Students?");
-    //     Console.Write("-> "); AmountOfGrades = Convert.ToInt32(Console.ReadLine());
-    //     AmountOfGrades = 35;
-    //     for(int n=0; n < AmountOfGrades; n++){
-    //         grades[n] = rnd.Next(0, 100);
-    //     }
-    //     Console.WriteLine("GRADES HAVE BEEN RANDOMIZED");
-    // }
-    // if(mainMenuChoice == 5){
-    //     Console.Clear();
-    //     Console.WriteLine("# of Students?");
-    //     Console.Write("-> "); AmountOfGrades = Convert.ToInt32(Console.ReadLine());
-    //     AmountOfGrades = 35;
-    //     for(int n=0; n < AmountOfGrades; n++){
-    //         grades[n] = rnd.Next(0, 100);
-    //     }
-    //     Console.WriteLine("GRADES HAVE BEEN RANDOMIZED");
-    // }
+    if(mainMenuChoice == 3){
+        Console.Clear();
+        Console.WriteLine("ALL NICKNAMES");
+        for (int i = 0; i < nickname.Count(); i++) {
+            Console.WriteLine($"{firstName} '{nickname[i]}' {lastName}");
+        }
+    }
+    if(mainMenuChoice == 4){
+        Console.Clear();
+        Console.WriteLine("ADD A NICKNAME");
+        Console.Write("Please enter a nickname to add: "); string newNickname = Console.ReadLine();
+        bool found = false;
+        for (int i = 0; i < nickname.Count(); i++) {
+            if(nickname[i] == newNickname){
+                found = true;
+            }
+        }
+        if(found == true){
+            Console.WriteLine($"{newNickname} is already in the nickname list.");
+        } else {
+            nickname.Add(newNickname);
+            Console.WriteLine($"{newNickname} has been added to the nickname list.");        
+        }
+    }
+    if(mainMenuChoice == 5){
+        Console.Clear();
+        Console.WriteLine("REMOVE A NICKNAME");
+        Console.Write("Please enter a nickname to remove: "); string removeNickname = Console.ReadLine();
+        bool found = false;
+        for (int i = 0; i < nickname.Count(); i++) {
+            if(nickname[i] == removeNickname){
+                found = true;
+            }
+        }
+        if(found == true){
+            nickname.Remove(removeNickname);
+            Console.WriteLine($"{removeNickname} has been removed from the nickname list.");
+        } else {
+            Console.WriteLine($"{removeNickname} was not found in the nickname list."); 
+        }
+    }
     if(mainMenuChoice == 6){
         Console.Clear();
         break;
